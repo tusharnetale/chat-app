@@ -5,6 +5,7 @@ const connectDB = require('./config/connectDB')
 const router = require('./routes/index')
 const cookiesParser = require('cookie-parser')
 const { app, server } = require('./socket/index')
+require("dotenv").config
 
 // const app = express()
 app.use(cors({
